@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main</title>
+    <meta charset="utf-8">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+
+<nav class="header_fixed">
+    <ul>
+        <li class="logo"><a href="/home" >TVchest</a></li>
+        <li class="btn"><span class="fas fa-bars"></span></li>
+        <div class="items">
+            <li><a href="/movies">ВИБРАНИ</a></li>
+            <li><a href="#">ЮЗЕР</a></li>
+            <li><a href="/logout">ВИЙТИ</a></li>
+        </div>
+        <li class="search-icon">
+            <input type="search" placeholder="Search">
+            <label class="icon">
+                <span class="fas fa-search"></span>
+            </label>
+        </li>
+    </ul>
+</nav>
+
+<div class="wrar">
+
+
+    <div class="lock">
+
+        <div class="imagetree">
+            <img src="image/disc/01.jpg">
+
+            <p class="discr">
+                Рейтинг: 7.5<br>
+                Год выпуска: 2021<br>
+                Жанры: Фантастика,<br> Фэнтези, Драма, Боевик<br>
+                Страны: Соединенные Штаты<br>
+                Статус: Продолжается<br>
+            </p>
+        </div>
+
+    </div>
+
+
+
+    <div class="lockfour">
+
+        <h3 style="color: #505050"> Мультиязычность</h3>
+        <p style="color: #505050">
+            Follow Moiraine, a member of the shadowy and influential all-female organization called the “Aes Sedai” as she embarks on a dangerous, world-spanning journey with five young men and women. Moiraine believes one of them might be the reincarnation of an incredibly powerful individual, whom prophecies say will either save humanity or destroy it.
+        </p>
+
+    </div>
+
+
+    <div class="cont">
+        <div class="con">
+            <hr class="fir"></hr>
+            <a class="a" href="https://youtu.be/11ZozKfRqvA">
+                <p style="color: #505050">The Dragon born</p>
+            </a>
+        </div>
+
+        <a class="a" href="movies.html">
+            <p style="color: #505050">Shadow stranger</p>
+        </a>
+    </div>
+</div>
+</body>
+<script>
+    $('nav ul li.btn span').click(function(){
+        $('nav ul div.items').toggleClass("show");
+        $('nav ul li.btn span').toggleClass("show");
+    });
+</script>
+<html>
